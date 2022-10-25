@@ -9,12 +9,60 @@
   }
 	
   .frame {
+    position: relative;
     border: 1px solid black;
     width: 500px;
     height: 500px;
+  }
+  
+  .bustelo {
+    width: 150px;
+    height: 185px;
+    background-color: hsl(49, 100%, 53%);
+    position: absolute;
+    right: 60px;
+    top: 150px;
+  }
+  
+  .red {
+    background-color: red;
+    height: 33%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+  
+  .cup {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(34,36,195,1) 50%);
+    background-size: 100% 40%;
+    border: 1px solid;
+    width: 50px;
+    height: 55px;
+    position: absolute;
+    right: 74px;
+    top: 95px;
+  }
+  
+  .triangle {
+    background: red;
+    width: 90%;
+    height: 100%;
+    clip-path: polygon(0 0, 0% 100%, 100% 49%);
+    color: white;
   }
 
 </style>
 
 
-<div class="frame"></div>
+<div class="frame">
+	
+  <div class="bustelo">
+    <div class="brand">Cafe Bustelo</div>
+    <div class="red"></div>
+  </div>
+  
+  <div class="cup">
+  	<div class="triangle">★</div>
+  </div>
+  
+</div>
