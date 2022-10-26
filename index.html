@@ -55,9 +55,14 @@
     width: 90%;
     height: 100%;
     clip-path: polygon(0 0, 0% 100%, 100% 49%);
+  }
+  
+  .triangle::after {
+    content: "★";
     color: white;
     font-size: 24px;
-    padding: 5px;
+    display: block;
+    transform: translate(7%, 31%);
   }
 
 </style>
@@ -71,7 +76,7 @@
   </div>
   
   <div class="cup">
-		<div class="triangle">★</div>
+		<div class="triangle"></div>
   </div>
   
 </div>
